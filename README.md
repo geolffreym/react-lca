@@ -25,7 +25,7 @@ For this tree, the lowest common ancestor for `2` and `6` is `9` because it is t
 2. The values in the tree are unique, so you don't need to worry about duplicates
 3. A `Node` DOES NOT have pointers to its parents. If you need to add other properties to aid with visualization you can do that, but the properties should not aid in finding the LCA
 
-## Approach
+# Approach
 
 First, a tree structure is created based on a raw array of numbers in string format, which is then parsed to build the array for javascript.
 These values will be assigned to each node during the construction of the tree. During the execution of the algorithm, a tree is created nesting the nodes keeping a recursive reference in memory, call this "Circular node memory stack reference": Every new node after being added to btree position (left, right) is added to the stack as to reference. The memory keep a track of each node and create a "pseudo-recursive" tree generation.
@@ -37,6 +37,28 @@ For the visualization of the tree a recursive component is created that shows th
 In the process of defining the tree through the input, a "debounce" is established and useMemo to improve the performance of the application avoiding overload in the construction of the tree.
 
 The input for node A and node B is added, both are passed to the search function (LCA) along with the root of the tree to obtain the "common ancestor", if the result is valid, the life cycle of react (rendering) to compare the "ancestor" with the value provided to each node in the component's props (each node is evaluated recursively to build the tree), when one of the nodes coincides with said ancestor a property is established to mark the node in the display graph.
+
+## Possible issues
+
+Among the possible bugs could be the input of text and not numbers in the input array and the values of the nodes for the search.
+Uncontrolled tree growth could cause display problems and potentially performance issues.
+
+## TODO
+
+* Responsive design improvements
+* Connect nodes with lines
+
+## Future improvements
+
+The user experience is important so part of the future should include improvements to the visualization, navigation and pagination of the tree which would have a positive impact on performance and usability.
+eg:
+
+* Remove raw string array to populate tree
+* Dynamically add values to each node
+* Add child nodes directly from parent nodes
+
+Part of the weaknesses is that the use is not intuitive, since not all users know the array structure.
+"Not everyone thinks like a programmer"
 
 # Available Scripts
 

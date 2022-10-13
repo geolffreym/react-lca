@@ -39,14 +39,14 @@ export const Container: FC = (): JSX.Element => {
     }
 
     // On ready to find LCA
-    const onSubmit = useCallback((e: FormEvent<HTMLFormElement>): void => {
+    const onSubmit = (e: FormEvent<HTMLFormElement>): void => {
         e.preventDefault()
         const nodeA = parseInt(e.currentTarget.A.value)
         const nodeB = parseInt(e.currentTarget.B.value)
 
         const lca = LCA(tree, nodeA, nodeB)
         setMatch(lca?.value ?? -1)
-    }, [rawTree])
+    }
 
     // Component composition with pre set events
     // avoid prop drilling anti-pattern

@@ -46,7 +46,7 @@ export const Container: FC = (): JSX.Element => {
 
         const lca = LCA(tree, nodeA, nodeB)
         setMatch(lca?.value ?? -1)
-    }, [tree])
+    }, [rawTree])
 
     // Component composition with pre set events
     // avoid prop drilling anti-pattern

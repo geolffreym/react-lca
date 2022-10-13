@@ -53,11 +53,13 @@ Uncontrolled tree growth could cause display problems and potentially performanc
 The user experience is important so part of the future should include improvements to the visualization, navigation and pagination of the tree which would have a positive impact on performance and usability.
 eg:
 
+* Add tree interactivity
 * Remove raw string array to populate tree
 * Dynamically add values to each node
-* Add child nodes directly from parent nodes
+* Add/remove/update child nodes directly from parent nodes
+* Remove sub-trees
 
-Part of the weaknesses is that the use is not intuitive, since not all users know the array structure.
+For instance part of the weaknesses in the app is that the use is not intuitive, since not all users know the array structure.
 "Not everyone thinks like a programmer"
 
 # Available Scripts

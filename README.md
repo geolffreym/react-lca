@@ -36,7 +36,7 @@ For the visualization of the tree a recursive component is created that shows th
 
 In the process of defining the tree through the input, a "debounce" is established and useMemo to improve the performance of the application avoiding overload in the construction of the tree.
 
-The input for node A and node B is added, both are passed to the search function (LCA) along with the root of the tree to obtain the "common ancestor", if the result is valid, the life cycle of react (rendering) to compare the "ancestor" with the value provided to each node in the component's props (each node is evaluated recursively to build the tree), when one of the nodes coincides with said ancestor a property is established to mark the node in the display graph.
+The input for node A and node B is added, both are passed to the lookup function (LCA) along with the root of the tree to get the "common ancestor", if the result is valid, the life cycle is exploited to react (render) to compare the "ancestor" with the value given to each node in the component's props (each node is evaluated recursively to build the tree), when one of the nodes matches said ancestor a property is set to mark the node in the display graph.
 
 ## Possible issues
 

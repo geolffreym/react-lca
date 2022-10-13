@@ -8,7 +8,7 @@ type GraphProps = {
 }
 
 
-const TreeGraph: FC<GraphProps> = memo(({ tree, match }): JSX.Element => {
+const Graph: FC<GraphProps> = memo(({ tree, match }): JSX.Element => {
     const RecursiveTree = (tree: Node | null) => {
         if (tree == null) return <></>
         return (
@@ -47,4 +47,4 @@ const TreeGraph: FC<GraphProps> = memo(({ tree, match }): JSX.Element => {
     )
 })
 
-export default TreeGraph
+export default Graph

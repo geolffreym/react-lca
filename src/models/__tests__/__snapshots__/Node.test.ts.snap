@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deserializes BT correctly should correctly work with a raw array 1`] = `
+Node {
+  "left": Node {
+    "left": Node {
+      "left": null,
+      "right": null,
+      "value": 2,
+    },
+    "right": Node {
+      "left": null,
+      "right": null,
+      "value": 6,
+    },
+    "value": 9,
+  },
+  "right": Node {
+    "left": null,
+    "right": Node {
+      "left": null,
+      "right": null,
+      "value": 4,
+    },
+    "value": 7,
+  },
+  "value": 3,
+}
+`;
+
+exports[`deserializes BT correctly should work with json array 1`] = `
+Node {
+  "left": Node {
+    "left": Node {
+      "left": null,
+      "right": null,
+      "value": 2,
+    },
+    "right": Node {
+      "left": null,
+      "right": null,
+      "value": 6,
+    },
+    "value": 9,
+  },
+  "right": Node {
+    "left": null,
+    "right": Node {
+      "left": null,
+      "right": null,
+      "value": 4,
+    },
+    "value": 7,
+  },
+  "value": 3,
+}
+`;

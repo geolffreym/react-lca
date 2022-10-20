@@ -47,6 +47,7 @@ Uncontrolled tree growth could cause display problems and potentially performanc
 
 * Responsive design improvements
 * Connect nodes with lines
+* Test Coverage
 
 ## Future improvements
 
